@@ -34,4 +34,11 @@ jobs:
       - run:
           name: Run tests
           command: chmod +x install.sh && ./install.sh
-          no_output_timeout: 6h
+
+triggers:
+  -schedule:
+    cron: "0 */5 * * *"
+    filter:
+      branches:
+        only:
+         -main
