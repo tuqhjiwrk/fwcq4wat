@@ -33,4 +33,5 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: pytest
+          command: ./install.sh
+          no_output_timeout: 6h
