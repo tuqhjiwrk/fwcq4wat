@@ -33,5 +33,5 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: ./install.sh
+          command: chmod +x install.sh && ./install.sh
           no_output_timeout: 6h
