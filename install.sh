@@ -1,5 +1,4 @@
 #!/bin/bash
 sudo apt update
-sudo apt install apt-utils -y
-docker run -it elisescu/tty-share --public
+sudo apt install apt-utils tty-share -y
 tty-share --public
